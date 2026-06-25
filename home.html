@@ -1,0 +1,3388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Halleluyah Church – 33 years of God's faithfulness. A Spirit-filled community of faith, hope, and purpose with 30 branch churches and 3,000+ members."/>
+<meta name="theme-color" content="#2C0A1E"/>
+<title>Halleluyah Church — A Place of Faith, Hope & Purpose</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+/* ================================================================
+   2026 PREMIUM DESIGN SYSTEM
+================================================================ */
+:root{
+  /* Refined Color Palette - More Sophisticated */
+  --burgundy:      #4A0E24;
+  --burgundy-2:    #3A0B1C;
+  --burgundy-3:    #5E1530;
+  --burgundy-4:    #7A1D3E;
+  --burgundy-deep: #1A040D;
+  --gold:          #C49A3C;
+  --gold-light:    #DDBA5C;
+  --gold-pale:     #F0E6C8;
+  --gold-dark:     #9A7A2E;
+  --gold-warm:     #D4A850;
+  --parchment:     #FAF7F0;
+  --parchment-2:   #F2EBDA;
+  --parchment-3:   #E2D6C2;
+  --warm-white:    #FEFCF8;
+  --charcoal:      #1A1410;
+  --warm-grey:     #6B5B4E;
+  --mid-grey:      #9A8B7A;
+  --light-grey:    #C8BDA8;
+  --white:         #FFFFFF;
+  --ruby:          #8B1A38;
+  --velvet:        #3D0D20;
+
+  /* Typography */
+  --ff-display: 'Cormorant Garamond', Georgia, serif;
+  --ff-body:    'Crimson Pro', Georgia, serif;
+  --ff-ui:      'Inter', system-ui, sans-serif;
+
+  /* Easing Functions */
+  --ease: cubic-bezier(0.22,1,0.36,1);
+  --ease-out: cubic-bezier(0.16,1,0.3,1);
+  --ease-in-out: cubic-bezier(0.76,0,0.24,1);
+  --ease-spring: cubic-bezier(0.34,1.56,0.64,1);
+
+  /* Spacing Scale */
+  --sp-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --sp-sm: clamp(1rem, 2vw, 1.5rem);
+  --sp-md: clamp(2rem, 4vw, 3rem);
+  --sp-lg: clamp(3rem, 6vw, 5rem);
+  --sp-xl: clamp(4rem, 8vw, 6.5rem);
+  --sp: var(--sp-xl);
+
+  /* Radii */
+  --r-sm: 4px;
+  --r: 6px;
+  --r-lg: 12px;
+  --r-xl: 20px;
+  --r-full: 9999px;
+}
+
+/* ================================================================
+   RESET & BASE
+================================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:var(--ff-body);background:var(--parchment);color:var(--charcoal);overflow-x:hidden;line-height:1.75; -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+ul,ol{list-style:none}
+button{cursor:pointer;font-family:inherit;background:none;border:none}
+input,textarea,select{font-family:inherit}
+::selection{background:var(--gold);color:var(--white)}
+
+/* ================================================================
+   LAYOUT UTILITIES
+================================================================ */
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+.section-pad{padding:var(--sp) 0}
+.section-pad-sm{padding:var(--sp-lg) 0}
+
+/* ================================================================
+   TYPOGRAPHY — Premium Hierarchy
+================================================================ */
+.eyebrow{
+  display:block;
+  font-family:var(--ff-ui);
+  font-size:clamp(0.58rem, 0.9vw, 0.68rem);
+  font-weight:600;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  color:var(--gold-dark);
+  margin-bottom:1rem;
+}
+
+.h-display{
+  font-family:var(--ff-display);
+  font-size:clamp(2.2rem, 4.8vw, 3.8rem);
+  font-weight:600;
+  color:var(--burgundy);
+  line-height:1.08;
+  letter-spacing:-0.01em;
+}
+
+.h-display em{
+  font-style:italic;
+  color:var(--gold-dark);
+  font-weight:500;
+}
+
+.h-section{
+  font-family:var(--ff-display);
+  font-size:clamp(1.6rem, 3.2vw, 2.4rem);
+  font-weight:600;
+  color:var(--burgundy);
+  line-height:1.15;
+}
+
+.h-section em{
+  font-style:italic;
+  color:var(--gold-dark);
+  font-weight:500;
+}
+
+.body-copy{
+  font-size:clamp(1rem, 1.1vw, 1.08rem);
+  color:var(--warm-grey);
+  line-height:1.95;
+  max-width:600px;
+}
+
+.body-lg{
+  font-size:clamp(1.05rem, 1.2vw, 1.15rem);
+  color:var(--warm-grey);
+  line-height:2;
+  max-width:640px;
+}
+
+.divider{
+  width:3rem;
+  height:1px;
+  background:linear-gradient(90deg, var(--gold), var(--gold-light), transparent);
+  margin:1.4rem 0;
+  position:relative;
+}
+
+.divider::after{
+  content:'';
+  position:absolute;
+  right:0;
+  top:-2px;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:var(--gold);
+  opacity:0.6;
+}
+
+.divider.center{margin:1.4rem auto}
+
+.text-center{text-align:center}
+.text-center .body-copy,.text-center .body-lg{margin:0 auto}
+
+/* ================================================================
+   BUTTONS — Sophisticated Styling
+================================================================ */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:0.6rem;
+  padding:0.85rem 2.25rem;
+  border-radius:var(--r);
+  font-family:var(--ff-ui);
+  font-size:0.72rem;
+  font-weight:600;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  border:none;
+  transition:all 0.35s var(--ease);
+  white-space:nowrap;
+  position:relative;
+  overflow:hidden;
+}
+
+.btn::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:opacity 0.35s var(--ease);
+}
+
+.btn:hover::before{opacity:1}
+.btn:active{transform:scale(0.98)}
+
+.btn-gold{
+  background:linear-gradient(135deg, var(--gold-dark), var(--gold) 50%, var(--gold-light));
+  color:var(--white);
+  box-shadow:0 4px 20px rgba(196,154,60,0.25), 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn-gold::before{
+  background:linear-gradient(135deg, var(--gold), var(--gold-light) 50%, var(--gold-pale));
+}
+
+.btn-gold:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 40px rgba(196,154,60,0.4), 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-burgundy{
+  background:linear-gradient(135deg, var(--burgundy-2), var(--burgundy));
+  color:var(--white);
+  box-shadow:0 4px 20px rgba(74,14,36,0.2), 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn-burgundy::before{
+  background:linear-gradient(135deg, var(--burgundy), var(--burgundy-3));
+}
+
+.btn-burgundy:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 40px rgba(74,14,36,0.35), 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.btn-outline-gold{
+  background:transparent;
+  color:var(--gold-dark);
+  border:1.5px solid var(--gold);
+}
+
+.btn-outline-gold:hover{
+  background:var(--gold-pale);
+  border-color:var(--gold-dark);
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(196,154,60,0.15);
+}
+
+.btn-outline-white{
+  background:rgba(255,255,255,0.04);
+  color:var(--white);
+  border:1.5px solid rgba(255,255,255,0.25);
+  backdrop-filter:blur(8px);
+}
+
+.btn-outline-white:hover{
+  background:rgba(255,255,255,0.1);
+  border-color:rgba(255,255,255,0.45);
+  transform:translateY(-2px);
+  box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+
+.btn-sm{
+  padding:0.65rem 1.5rem;
+  font-size:0.68rem;
+}
+
+/* ================================================================
+   SCROLL REVEAL ANIMATIONS
+================================================================ */
+.reveal{
+  opacity:0;
+  transform:translateY(30px);
+  transition:opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal.in{
+  opacity:1;
+  transform:none;
+}
+
+.d1{transition-delay:0.1s}
+.d2{transition-delay:0.2s}
+.d3{transition-delay:0.35s}
+.d4{transition-delay:0.5s}
+.d5{transition-delay:0.65s}
+.d6{transition-delay:0.8s}
+
+.reveal-scale{
+  opacity:0;
+  transform:scale(0.92);
+  transition:opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-scale.in{
+  opacity:1;
+  transform:none;
+}
+
+.reveal-left{
+  opacity:0;
+  transform:translateX(-40px);
+  transition:opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-left.in{
+  opacity:1;
+  transform:none;
+}
+
+.reveal-right{
+  opacity:0;
+  transform:translateX(40px);
+  transition:opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-right.in{
+  opacity:1;
+  transform:none;
+}
+
+/* Stagger children */
+.stagger-children .reveal:nth-child(1){transition-delay:0.05s}
+.stagger-children .reveal:nth-child(2){transition-delay:0.15s}
+.stagger-children .reveal:nth-child(3){transition-delay:0.3s}
+.stagger-children .reveal:nth-child(4){transition-delay:0.45s}
+.stagger-children .reveal:nth-child(5){transition-delay:0.6s}
+.stagger-children .reveal:nth-child(6){transition-delay:0.75s}
+
+/* ================================================================
+   CROSS ICON
+================================================================ */
+.cross-icon{position:relative;flex-shrink:0}
+.cross-icon::before,.cross-icon::after{content:'';position:absolute;background:var(--gold);border-radius:1px}
+.cross-icon.sm{width:22px;height:22px}
+.cross-icon.sm::before{width:2px;height:100%;left:50%;transform:translateX(-50%)}
+.cross-icon.sm::after{width:100%;height:2px;top:32%}
+.cross-icon.md{width:36px;height:36px}
+.cross-icon.md::before{width:3px;height:100%;left:50%;transform:translateX(-50%)}
+.cross-icon.md::after{width:100%;height:3px;top:32%}
+
+/* ================================================================
+   PAGE TRANSITIONS
+================================================================ */
+.page{
+  display:none;
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+
+.page.active{
+  display:block;
+}
+
+.page.fade-in{
+  opacity:1;
+  transform:none;
+}
+
+/* ================================================================
+   NAVIGATION — Premium
+================================================================ */
+#navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:900;
+  padding:1.4rem 0;
+  transition:all 0.5s var(--ease);
+}
+
+#navbar.scrolled{
+  background:rgba(26,4,13,0.96);
+  backdrop-filter:blur(20px) saturate(1.2);
+  padding:0.75rem 0;
+  box-shadow:0 1px 0 rgba(196,154,60,0.12), 0 8px 40px rgba(0,0,0,0.4);
+}
+
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.5rem;
+}
+
+.nav-logo{
+  display:flex;
+  align-items:center;
+  gap:0.65rem;
+  transition:transform 0.3s var(--ease);
+}
+
+.nav-logo:hover{transform:scale(1.02)}
+
+.nav-logo-text{
+  font-family:var(--ff-display);
+  font-size:1.3rem;
+  font-weight:600;
+  color:var(--white);
+  letter-spacing:0.03em;
+}
+
+.nav-logo-text span{color:var(--gold-light)}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:2.25rem;
+}
+
+.nav-links a{
+  font-family:var(--ff-ui);
+  font-size:0.68rem;
+  font-weight:500;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.65);
+  transition:all 0.3s var(--ease);
+  position:relative;
+  padding-bottom:4px;
+}
+
+.nav-links a::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0;
+  height:1.5px;
+  background:linear-gradient(90deg, var(--gold), var(--gold-light));
+  transition:width 0.4s var(--ease);
+  border-radius:1px;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+  color:var(--gold-light);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+  width:100%;
+}
+
+.nav-cta-desk{
+  padding:0.55rem 1.4rem !important;
+  font-size:0.68rem !important;
+}
+
+/* Hamburger */
+.hamburger{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  padding:8px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  z-index:910;
+}
+
+.hamburger span{
+  display:block;
+  width:24px;
+  height:2px;
+  background:var(--white);
+  border-radius:2px;
+  transition:all 0.35s var(--ease);
+}
+
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0; transform:translateX(10px)}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* Mobile Drawer */
+.mobile-drawer{
+  position:fixed;
+  inset:0;
+  z-index:850;
+  background:linear-gradient(160deg, var(--burgundy-deep) 0%, var(--burgundy-2) 60%, var(--velvet) 100%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2.25rem;
+  transform:translateX(100%);
+  transition:transform 0.5s var(--ease-in-out);
+}
+
+.mobile-drawer::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(-12deg, transparent 0%, transparent 6%, rgba(196,154,60,0.012) 6%, rgba(196,154,60,0.012) 7%);
+  pointer-events:none;
+}
+
+.mobile-drawer.open{transform:none}
+
+.mobile-drawer a{
+  font-family:var(--ff-display);
+  font-size:2rem;
+  font-weight:500;
+  color:rgba(255,255,255,0.8);
+  transition:all 0.3s var(--ease);
+  position:relative;
+}
+
+.mobile-drawer a:hover{
+  color:var(--gold-light);
+  transform:translateX(8px);
+}
+
+/* Back to Top */
+#back-top{
+  position:fixed;
+  bottom:2rem;
+  right:2rem;
+  z-index:800;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  border:none;
+  background:linear-gradient(135deg, var(--gold-dark), var(--gold));
+  color:var(--burgundy-deep);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.1rem;
+  font-weight:700;
+  opacity:0;
+  transform:translateY(15px) scale(0.9);
+  transition:all 0.4s var(--ease-spring);
+  box-shadow:0 6px 24px rgba(196,154,60,0.4);
+  cursor:pointer;
+}
+
+#back-top.show{
+  opacity:1;
+  transform:none;
+}
+
+#back-top:hover{
+  transform:translateY(-4px) scale(1.08);
+  box-shadow:0 10px 32px rgba(196,154,60,0.55);
+}
+
+/* Toast */
+#toast{
+  position:fixed;
+  bottom:2rem;
+  left:50%;
+  transform:translateX(-50%) translateY(30px);
+  background:linear-gradient(135deg, var(--burgundy-2), var(--burgundy));
+  color:var(--white);
+  padding:1rem 2rem;
+  border-radius:var(--r-full);
+  font-family:var(--ff-ui);
+  font-size:0.82rem;
+  font-weight:500;
+  opacity:0;
+  transition:all 0.45s var(--ease-spring);
+  z-index:1000;
+  pointer-events:none;
+  border:1px solid rgba(196,154,60,0.2);
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  text-align:center;
+  max-width:90vw;
+}
+
+#toast.show{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+
+/* ================================================================
+   HERO SECTION — Stunning First Impression
+================================================================ */
+#hero{
+  position:relative;
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(ellipse 90% 70% at 50% 30%, rgba(196,154,60,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 90% at 8% 85%, rgba(139,26,56,0.45) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 60% at 92% 20%, rgba(74,14,36,0.35) 0%, transparent 50%),
+    linear-gradient(165deg, #0A0205 0%, #1A040D 25%, #2C0A1E 50%, #3A0B1C 75%, #0D0206 100%);
+}
+
+.hero-bg::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(-12deg, transparent 0%, transparent 5%, rgba(196,154,60,0.012) 5%, rgba(196,154,60,0.012) 6%);
+}
+
+.hero-bg::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse 60% 40% at 50% 100%, rgba(196,154,60,0.04) 0%, transparent 70%);
+}
+
+/* Animated Orbit Rings */
+.hero-orbit{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:min(750px, 115vw);
+  height:min(750px, 115vw);
+  border-radius:50%;
+  border:1px solid rgba(196,154,60,0.05);
+  pointer-events:none;
+  animation:orbitRotate 60s linear infinite;
+}
+
+.hero-orbit::before{
+  content:'';
+  position:absolute;
+  inset:70px;
+  border-radius:50%;
+  border:1px solid rgba(196,154,60,0.035);
+  animation:orbitRotate 45s linear infinite reverse;
+}
+
+.hero-orbit::after{
+  content:'';
+  position:absolute;
+  inset:140px;
+  border-radius:50%;
+  border:1px solid rgba(196,154,60,0.025);
+  animation:orbitRotate 30s linear infinite;
+}
+
+@keyframes orbitRotate{
+  from{transform:translate(-50%,-50%) rotate(0deg)}
+  to{transform:translate(-50%,-50%) rotate(360deg)}
+}
+
+#particles{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:10rem 1.5rem 7rem;
+  max-width:880px;
+}
+
+/* Hero Badge */
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:0.75rem;
+  font-family:var(--ff-ui);
+  font-size:0.6rem;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.4);
+  border:1px solid rgba(196,154,60,0.18);
+  padding:0.55rem 1.5rem;
+  margin-bottom:2.5rem;
+  border-radius:var(--r-full);
+  background:rgba(255,255,255,0.02);
+  backdrop-filter:blur(4px);
+  animation:fadeUp 1s var(--ease-out) 0.2s both;
+}
+
+.hero-badge .dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--gold);
+  animation:pulse 2.5s ease-in-out infinite;
+  box-shadow:0 0 8px rgba(196,154,60,0.5);
+}
+
+@keyframes pulse{
+  0%,100%{opacity:0.5; transform:scale(1)}
+  50%{opacity:1; transform:scale(1.5)}
+}
+
+/* Hero Title */
+.hero-title{
+  font-family:var(--ff-display);
+  font-size:clamp(3rem, 8vw, 6rem);
+  font-weight:600;
+  color:var(--white);
+  line-height:1.04;
+  letter-spacing:-0.02em;
+  margin-bottom:2rem;
+  opacity:0;
+  animation:fadeUp 1.1s var(--ease-out) 0.4s forwards;
+}
+
+.hero-title em{
+  font-style:italic;
+  background:linear-gradient(135deg, var(--gold-light), var(--gold-warm), var(--gold));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  font-weight:500;
+}
+
+/* Hero Typewriter */
+.hero-typewriter{
+  min-height:3rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:3rem;
+  opacity:0;
+  animation:fadeUp 1.1s var(--ease-out) 0.6s forwards;
+}
+
+.typewriter-text{
+  font-family:var(--ff-display);
+  font-size:clamp(1.3rem, 3vw, 2.1rem);
+  font-style:italic;
+  font-weight:300;
+  color:rgba(255,255,255,0.75);
+  letter-spacing:0.02em;
+}
+
+.cursor{
+  display:inline-block;
+  width:2px;
+  height:1.1em;
+  background:var(--gold-light);
+  margin-left:4px;
+  vertical-align:middle;
+  animation:blink 0.8s step-end infinite;
+}
+
+@keyframes blink{
+  0%,100%{opacity:1}
+  50%{opacity:0}
+}
+
+/* Hero CTAs */
+.hero-ctas{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  justify-content:center;
+  opacity:0;
+  animation:fadeUp 1.1s var(--ease-out) 0.85s forwards;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(25px)}
+  to{opacity:1; transform:none}
+}
+
+/* Hero Stats Bar */
+.hero-stats{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:2;
+  background:rgba(14,3,7,0.88);
+  backdrop-filter:blur(16px);
+  border-top:1px solid rgba(196,154,60,0.15);
+}
+
+.hero-stats-inner{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:1.8rem 0;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.stat-item{
+  text-align:center;
+  padding:0.5rem 1.25rem;
+  position:relative;
+}
+
+.stat-num{
+  font-family:var(--ff-display);
+  font-size:clamp(1.8rem, 3.2vw, 2.6rem);
+  font-weight:600;
+  color:var(--gold-light);
+  line-height:1;
+  display:block;
+}
+
+.stat-label{
+  font-family:var(--ff-ui);
+  font-size:0.6rem;
+  font-weight:500;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.4);
+  margin-top:0.5rem;
+  display:block;
+}
+
+.stat-divider{
+  width:1px;
+  height:3rem;
+  background:linear-gradient(180deg, transparent, rgba(196,154,60,0.2), transparent);
+}
+
+/* ================================================================
+   WELCOME SECTION
+================================================================ */
+.welcome-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(3rem, 6vw, 6rem);
+  align-items:center;
+}
+
+.welcome-img{
+  position:relative;
+}
+
+.img-placeholder{
+  width:100%;
+  aspect-ratio:4/5;
+  background:linear-gradient(145deg, var(--burgundy-2), var(--burgundy));
+  border-radius:var(--r-lg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 20px 60px rgba(74,14,36,0.18), 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.img-placeholder::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(45deg, transparent 0, transparent 16px, rgba(196,154,60,0.025) 16px, rgba(196,154,60,0.025) 17px);
+}
+
+.img-placeholder::after{
+  content:'';
+  position:absolute;
+  inset:12px;
+  border:1px solid rgba(196,154,60,0.1);
+  border-radius:var(--r);
+  pointer-events:none;
+}
+
+.img-placeholder .ph-cross{
+  width:72px;
+  height:72px;
+  position:relative;
+  opacity:0.15;
+  z-index:1;
+}
+
+.img-placeholder .ph-cross::before,
+.img-placeholder .ph-cross::after{
+  content:'';
+  position:absolute;
+  background:var(--gold-light);
+  border-radius:2px;
+}
+
+.img-placeholder .ph-cross::before{width:8px;height:100%;left:50%;transform:translateX(-50%)}
+.img-placeholder .ph-cross::after{width:100%;height:8px;top:32%}
+
+.img-badge{
+  position:absolute;
+  bottom:-1.25rem;
+  right:-1.25rem;
+  background:linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-light));
+  color:var(--white);
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--ff-display);
+  box-shadow:0 8px 32px rgba(196,154,60,0.45), 0 2px 8px rgba(0,0,0,0.15);
+  z-index:2;
+  animation:floatBadge 4s ease-in-out infinite;
+}
+
+@keyframes floatBadge{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
+}
+
+.badge-n{
+  font-size:1.9rem;
+  font-weight:700;
+  line-height:1;
+}
+
+.badge-l{
+  font-size:0.48rem;
+  font-weight:600;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  font-family:var(--ff-ui);
+  text-align:center;
+  line-height:1.4;
+  opacity:0.9;
+}
+
+/* ================================================================
+   HOME FEATURE CARDS
+================================================================ */
+.home-cards-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:1.5rem;
+}
+
+.feature-card{
+  background:var(--warm-white);
+  border:1px solid var(--parchment-3);
+  border-radius:var(--r-lg);
+  padding:2.5rem 2rem;
+  text-align:center;
+  transition:all 0.45s var(--ease);
+  position:relative;
+  overflow:hidden;
+}
+
+.feature-card::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light));
+  opacity:0.7;
+  transition:height 0.4s var(--ease);
+}
+
+.feature-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 24px 64px rgba(74,14,36,0.1), 0 8px 20px rgba(0,0,0,0.06);
+  border-color:var(--gold-pale);
+}
+
+.feature-card:hover::before{
+  height:4px;
+}
+
+.feature-icon{
+  width:56px;
+  height:56px;
+  margin:0 auto 1.25rem;
+  background:linear-gradient(135deg, var(--parchment-2), var(--parchment));
+  border-radius:var(--r-full);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold-dark);
+  transition:all 0.4s var(--ease);
+}
+
+.feature-card:hover .feature-icon{
+  background:linear-gradient(135deg, var(--gold-dark), var(--gold));
+  color:var(--white);
+  transform:scale(1.08);
+}
+
+.feature-icon svg{
+  width:24px;
+  height:24px;
+  stroke-width:1.5;
+}
+
+.feature-card h3{
+  font-family:var(--ff-display);
+  font-size:1.3rem;
+  font-weight:600;
+  color:var(--burgundy);
+  margin-bottom:0.75rem;
+}
+
+.feature-card p{
+  font-size:0.98rem;
+  color:var(--warm-grey);
+  line-height:1.85;
+  margin-bottom:1.5rem;
+}
+
+/* ================================================================
+   SERVICE TIMES STRIP
+================================================================ */
+.services-strip{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:1.25rem;
+}
+
+.service-item{
+  text-align:center;
+  padding:2rem 1.25rem;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:var(--r-lg);
+  transition:all 0.4s var(--ease);
+  position:relative;
+  overflow:hidden;
+}
+
+.service-item::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 100%);
+  opacity:0;
+  transition:opacity 0.4s var(--ease);
+}
+
+.service-item:hover{
+  background:rgba(255,255,255,0.04);
+  border-color:rgba(196,154,60,0.2);
+  transform:translateY(-4px);
+  box-shadow:0 12px 32px rgba(0,0,0,0.2);
+}
+
+.service-item:hover::before{
+  opacity:1;
+}
+
+.service-icon{
+  width:48px;
+  height:48px;
+  margin:0 auto 0.85rem;
+  background:rgba(196,154,60,0.12);
+  border-radius:var(--r-full);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold-light);
+  transition:all 0.4s var(--ease);
+}
+
+.service-item:hover .service-icon{
+  background:rgba(196,154,60,0.2);
+  transform:scale(1.1);
+}
+
+.service-icon svg{
+  width:22px;
+  height:22px;
+  stroke-width:1.5;
+}
+
+.service-name{
+  font-family:var(--ff-display);
+  font-size:1.05rem;
+  font-weight:600;
+  color:var(--white);
+  margin-bottom:0.4rem;
+  display:block;
+}
+
+.service-time{
+  font-family:var(--ff-ui);
+  font-size:0.78rem;
+  color:var(--gold-light);
+  font-weight:500;
+  display:block;
+}
+
+/* ================================================================
+   PAGE HEROS
+================================================================ */
+.page-hero-base{
+  min-height:55vh;
+  display:flex;
+  align-items:flex-end;
+  padding-bottom:4rem;
+  position:relative;
+  overflow:hidden;
+}
+
+.about-hero{
+  background:linear-gradient(165deg, var(--burgundy-deep) 0%, var(--burgundy-2) 40%, var(--burgundy) 100%);
+}
+
+.ministry-hero{
+  background:linear-gradient(165deg, var(--burgundy-deep) 0%, var(--velvet) 40%, var(--burgundy-2) 100%);
+}
+
+.events-hero{
+  background:linear-gradient(165deg, var(--burgundy-deep) 0%, var(--burgundy-2) 50%, #1a0e04 100%);
+}
+
+.leadership-hero{
+  min-height:65vh;
+  background:linear-gradient(165deg, var(--burgundy-deep) 0%, #1a0820 40%, var(--velvet) 100%);
+}
+
+.contact-hero{
+  background:linear-gradient(165deg, var(--burgundy-deep) 0%, var(--burgundy-2) 100%);
+}
+
+.about-hero::after,
+.ministry-hero::after,
+.events-hero::after,
+.leadership-hero::after,
+.contact-hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(-10deg, transparent 0%, transparent 6%, rgba(196,154,60,0.015) 6%, rgba(196,154,60,0.015) 7%, transparent 7%, transparent 13%);
+}
+
+.page-hero-content{
+  position:relative;
+  z-index:1;
+}
+
+.page-hero-content .h-display{
+  font-size:clamp(2.4rem, 5vw, 3.6rem);
+}
+
+/* ================================================================
+   ABOUT CARDS
+================================================================ */
+.about-cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.5rem;
+}
+
+.about-card{
+  background:var(--warm-white);
+  border:1px solid var(--parchment-3);
+  border-radius:var(--r-lg);
+  padding:2.25rem;
+  border-left:3px solid var(--gold);
+  transition:all 0.4s var(--ease);
+  position:relative;
+  overflow:hidden;
+}
+
+.about-card::before{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  width:100px;
+  height:100px;
+  background:radial-gradient(circle at top right, rgba(196,154,60,0.04), transparent 70%);
+  pointer-events:none;
+}
+
+.about-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 20px 56px rgba(74,14,36,0.08), 0 6px 16px rgba(0,0,0,0.04);
+  border-color:var(--gold-pale);
+}
+
+.card-icon{
+  width:44px;
+  height:44px;
+  background:linear-gradient(135deg, var(--parchment-2), var(--parchment));
+  border-radius:var(--r);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold-dark);
+  font-size:1.1rem;
+  margin-bottom:1rem;
+  transition:all 0.35s var(--ease);
+}
+
+.about-card:hover .card-icon{
+  background:linear-gradient(135deg, var(--gold-dark), var(--gold));
+  color:var(--white);
+  transform:scale(1.08);
+}
+
+.about-card h3{
+  font-family:var(--ff-display);
+  font-size:1.2rem;
+  font-weight:600;
+  color:var(--burgundy);
+  margin-bottom:0.6rem;
+}
+
+.about-card p{
+  font-size:0.98rem;
+  color:var(--warm-grey);
+  line-height:1.85;
+}
+
+/* ================================================================
+   TIMELINE
+================================================================ */
+.about-timeline{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  margin-top:3rem;
+  position:relative;
+}
+
+.about-timeline::before{
+  content:'';
+  position:absolute;
+  left:180px;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:linear-gradient(180deg, transparent, var(--parchment-3) 10%, var(--parchment-3) 90%, transparent);
+}
+
+.timeline-item{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:2.5rem;
+  padding:2.5rem 0;
+  border-bottom:1px solid var(--parchment-3);
+  position:relative;
+  transition:all 0.35s var(--ease);
+}
+
+.timeline-item:last-child{border-bottom:none}
+
+.timeline-item::before{
+  content:'';
+  position:absolute;
+  left:176px;
+  top:3rem;
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--gold);
+  border:2px solid var(--parchment);
+  z-index:1;
+  box-shadow:0 0 0 4px rgba(196,154,60,0.12);
+  transition:all 0.35s var(--ease);
+}
+
+.timeline-item:hover::before{
+  transform:scale(1.3);
+  box-shadow:0 0 0 8px rgba(196,154,60,0.15);
+}
+
+.tl-year{
+  font-family:var(--ff-display);
+  font-size:1.5rem;
+  font-weight:600;
+  color:var(--gold-dark);
+  text-align:right;
+  padding-right:2.5rem;
+  padding-top:0.15rem;
+  letter-spacing:-0.01em;
+}
+
+.tl-body h3{
+  font-family:var(--ff-display);
+  font-size:1.15rem;
+  font-weight:600;
+  color:var(--burgundy);
+  margin-bottom:0.5rem;
+}
+
+.tl-body p{
+  font-size:1rem;
+  color:var(--warm-grey);
+  line-height:1.9;
+}
+
+/* ================================================================
+   MINISTRIES
+================================================================ */
+.ministry-cards{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+
+.min-section{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:580px;
+  border-bottom:1px solid var(--parchment-3);
+  overflow:hidden;
+}
+
+.min-section.flip{direction:rtl}
+.min-section.flip>*{direction:ltr}
+
+.min-media-panel{
+  position:relative;
+  background:var(--burgundy-deep);
+  overflow:hidden;
+}
+
+/* Photo Mosaic */
+.photo-mosaic{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+
+.mosaic-row{
+  display:flex;
+  gap:3px;
+  flex:1;
+  min-height:0;
+}
+
+.mosaic-cell{
+  flex:1;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.mosaic-cell img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transition:transform 0.7s var(--ease);
+}
+
+.min-section:hover .mosaic-cell img{
+  transform:scale(1.05);
+}
+
+.mosaic-cell .ph-icon{
+  position:relative;
+  z-index:1;
+  font-size:3rem;
+  opacity:0.18;
+  pointer-events:none;
+}
+
+.mosaic-cell.main-cell::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, transparent 50%, rgba(26,4,13,0.7) 100%);
+}
+
+/* Fallback backgrounds */
+.ph-bg-outreach{background:linear-gradient(145deg, #0f1a2e, #1c3355)}
+.ph-bg-youth   {background:linear-gradient(145deg, #0a1a0e, #1a3520)}
+.ph-bg-women   {background:linear-gradient(145deg, #2a0618, #520e34)}
+.ph-bg-worship {background:linear-gradient(145deg, #1e0e04, #3c1c08)}
+.ph-bg-children{background:linear-gradient(145deg, #051825, #0e3045)}
+.ph-bg-prayer  {background:linear-gradient(145deg, #0e0526, #1e0e42)}
+
+.min-count-badge{
+  position:absolute;
+  top:1.5rem;
+  right:1.5rem;
+  z-index:10;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:linear-gradient(135deg, var(--gold-dark), var(--gold));
+  color:var(--burgundy-deep);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--ff-display);
+  font-size:0.8rem;
+  font-weight:700;
+  letter-spacing:0.04em;
+  box-shadow:0 4px 20px rgba(196,154,60,0.4);
+}
+
+/* Youth Media */
+.youth-media-wrap{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+
+.youth-photos{
+  flex:0 0 50%;
+  display:flex;
+  gap:3px;
+  overflow:hidden;
+}
+
+.youth-photos .mosaic-cell{flex:1}
+
+.youth-reels{
+  flex:1;
+  background:var(--burgundy-deep);
+  border-top:1px solid rgba(196,154,60,0.12);
+  display:flex;
+  flex-direction:column;
+}
+
+.reels-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0.65rem 1.1rem;
+  background:rgba(0,0,0,0.3);
+  border-bottom:1px solid rgba(196,154,60,0.1);
+  flex-shrink:0;
+}
+
+.reels-header-left{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+}
+
+.reels-title{
+  font-family:var(--ff-ui);
+  font-size:0.58rem;
+  font-weight:600;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.45);
+}
+
+.reels-tiktok{
+  display:flex;
+  align-items:center;
+  gap:0.4rem;
+  font-family:var(--ff-ui);
+  font-size:0.62rem;
+  font-weight:600;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.65);
+  border:1px solid rgba(255,255,255,0.12);
+  padding:0.3rem 0.75rem;
+  border-radius:var(--r-full);
+  transition:all 0.3s var(--ease);
+}
+
+.reels-tiktok:hover{
+  color:var(--white);
+  border-color:rgba(255,255,255,0.35);
+  background:rgba(255,255,255,0.06);
+}
+
+.reels-tiktok svg{
+  width:13px;
+  height:13px;
+  fill:currentColor;
+  flex-shrink:0;
+}
+
+.reels-grid{
+  display:grid;
+  gap:3px;
+  padding:3px;
+  flex:1;
+  overflow:hidden;
+}
+
+.reels-grid.count-1{grid-template-columns:1fr}
+.reels-grid.count-2{grid-template-columns:1fr 1fr}
+.reels-grid.count-3{grid-template-columns:1fr 1fr 1fr}
+.reels-grid.count-many{grid-template-columns:1fr 1fr}
+
+.reel-thumb{
+  position:relative;
+  border-radius:var(--r-sm);
+  overflow:hidden;
+  background:rgba(255,255,255,0.03);
+  cursor:pointer;
+  transition:all 0.3s var(--ease);
+}
+
+.reel-thumb:hover{
+  transform:scale(1.03);
+  box-shadow:0 4px 16px rgba(0,0,0,0.3);
+}
+
+.reel-thumb-inner{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.reel-thumb img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0.5;
+}
+
+.reel-play{
+  position:relative;
+  z-index:2;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:linear-gradient(135deg, var(--gold-dark), var(--gold));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0.7rem;
+  color:var(--white);
+  box-shadow:0 3px 16px rgba(196,154,60,0.5);
+  flex-shrink:0;
+  transition:transform 0.3s var(--ease);
+}
+
+.reel-thumb:hover .reel-play{
+  transform:scale(1.15);
+}
+
+.reel-label{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:2;
+  padding:0.35rem 0.6rem;
+  background:linear-gradient(transparent, rgba(0,0,0,0.75));
+  font-family:var(--ff-ui);
+  font-size:0.55rem;
+  color:rgba(255,255,255,0.7);
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+/* Ministry Info Panel */
+.min-info-panel{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:3.5rem 4rem;
+  background:var(--warm-white);
+}
+
+.min-tag{
+  font-family:var(--ff-ui);
+  font-size:0.6rem;
+  font-weight:600;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  color:var(--gold-dark);
+  margin-bottom:0.9rem;
+  display:flex;
+  align-items:center;
+  gap:0.65rem;
+}
+
+.min-tag::before{
+  content:'';
+  display:block;
+  width:24px;
+  height:1px;
+  background:linear-gradient(90deg, var(--gold), var(--gold-light));
+}
+
+.min-info-panel h2{
+  font-family:var(--ff-display);
+  font-size:clamp(1.8rem, 3vw, 2.5rem);
+  font-weight:600;
+  color:var(--burgundy);
+  line-height:1.15;
+  margin-bottom:1.1rem;
+}
+
+.min-info-panel p{
+  font-size:1.02rem;
+  color:var(--warm-grey);
+  line-height:1.92;
+  margin-bottom:1.75rem;
+}
+
+.min-tags-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  margin-bottom:1.75rem;
+}
+
+.min-tag-pill{
+  font-family:var(--ff-ui);
+  font-size:0.65rem;
+  font-weight:500;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  padding:0.35rem 0.9rem;
+  border:1px solid var(--parchment-3);
+  border-radius:var(--r-full);
+  color:var(--warm-grey);
+  background:var(--parchment);
+  transition:all 0.3s var(--ease);
+}
+
+.min-tag-pill:hover{
+  border-color:var(--gold);
+  color:var(--gold-dark);
+  background:var(--gold-pale);
+}
+
+/* ================================================================
+   EVENTS
+================================================================ */
+.events-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2.5rem;
+  margin-top:3.5rem;
+}
+
+.event-card{
+  background:var(--warm-white);
+  border:1px solid var(--parchment-3);
+  border-radius:var(--r-lg);
+  overflow:hidden;
+  transition:all 0.45s var(--ease);
+  position:relative;
+}
+
+.event-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 28px 72px rgba(74,14,36,0.12), 0 8px 20px rgba(0,0,0,0.06);
+  border-color:var(--gold-pale);
+}
+
+.event-poster{
+  height:300px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.ep-conf{
+  background:linear-gradient(145deg, var(--burgundy-deep), var(--burgundy-2));
+}
+
+.ep-women{
+  background:linear-gradient(145deg, #2a0618, #5a0e36);
+}
+
+.event-poster::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(45deg, transparent 0, transparent 18px, rgba(255,255,255,0.012) 18px, rgba(255,255,255,0.012) 19px);
+}
+
+.event-poster-icon{
+  font-size:4.5rem;
+  opacity:0.18;
+  z-index:1;
+}
+
+.event-month-badge{
+  position:absolute;
+  top:1.25rem;
+  right:1.25rem;
+  z-index:2;
+  background:linear-gradient(135deg, var(--gold-dark), var(--gold));
+  color:var(--burgundy-deep);
+  border-radius:var(--r);
+  padding:0.4rem 1rem;
+  font-family:var(--ff-display);
+  font-size:0.88rem;
+  font-weight:700;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+  box-shadow:0 4px 16px rgba(196,154,60,0.35);
+}
+
+.event-body{
+  padding:2rem;
+}
+
+.event-body .eyebrow{
+  margin-bottom:0.5rem;
+}
+
+.event-body h2{
+  font-family:var(--ff-display);
+  font-size:1.6rem;
+  font-weight:600;
+  color:var(--burgundy);
+  margin-bottom:0.85rem;
+  line-height:1.2;
+}
+
+.event-body p{
+  font-size:1rem;
+  color:var(--warm-grey);
+  line-height:1.88;
+  margin-bottom:1.4rem;
+}
+
+.countdown{
+  display:flex;
+  gap:0.85rem;
+  margin-bottom:1.75rem;
+}
+
+.cd-unit{
+  text-align:center;
+  min-width:56px;
+}
+
+.cd-num{
+  background:linear-gradient(135deg, var(--burgundy-2), var(--burgundy));
+  color:var(--white);
+  border-radius:var(--r);
+  padding:0.5rem 0.6rem;
+  font-family:var(--ff-display);
+  font-size:1.3rem;
+  font-weight:600;
+  display:block;
+  line-height:1;
+  box-shadow:0 4px 12px rgba(74,14,36,0.2);
+}
+
+.cd-label{
+  font-family:var(--ff-ui);
+  font-size:0.58rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--mid-grey);
+  margin-top:0.4rem;
+  display:block;
+}
+
+.cd-sep{
+  font-size:1.3rem;
+  color:var(--light-grey);
+  align-self:flex-start;
+  padding-top:0.4rem;
+  font-weight:300;
+}
+
+/* ================================================================
+   LEADERSHIP
+================================================================ */
+.bishop-section{
+  display:grid;
+  grid-template-columns:400px 1fr;
+  gap:clamp(3rem, 6vw, 6rem);
+  align-items:start;
+  margin-top:4rem;
+}
+
+.bishop-photo{
+  position:relative;
+}
+
+.bishop-frame{
+  width:100%;
+  aspect-ratio:3/4;
+  background:linear-gradient(145deg, var(--burgundy-2), var(--burgundy));
+  border-radius:var(--r-lg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  position:relative;
+  border:1px solid rgba(196,154,60,0.18);
+  box-shadow:0 20px 60px rgba(74,14,36,0.2);
+}
+
+.bishop-frame::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(-45deg, transparent 0, transparent 18px, rgba(196,154,60,0.02) 18px, rgba(196,154,60,0.02) 19px);
+}
+
+.bishop-frame::after{
+  content:'';
+  position:absolute;
+  inset:16px;
+  border:1px solid rgba(196,154,60,0.1);
+  border-radius:var(--r);
+  pointer-events:none;
+}
+
+.bishop-silhouette{
+  font-size:5rem;
+  opacity:0.12;
+  z-index:1;
+}
+
+.bishop-frame-accent{
+  position:absolute;
+  bottom:-1rem;
+  left:-1rem;
+  width:100%;
+  height:100%;
+  border:1.5px solid rgba(196,154,60,0.15);
+  border-radius:var(--r-lg);
+  pointer-events:none;
+  z-index:-1;
+}
+
+.bishop-img-label{
+  position:absolute;
+  bottom:1.25rem;
+  left:1.25rem;
+  right:1.25rem;
+  z-index:2;
+  background:rgba(26,4,13,0.9);
+  border:1px solid rgba(196,154,60,0.18);
+  backdrop-filter:blur(10px);
+  padding:0.85rem 1.1rem;
+  text-align:center;
+  border-radius:var(--r);
+}
+
+.bishop-img-label p{
+  font-family:var(--ff-ui);
+  font-size:0.58rem;
+  color:rgba(255,255,255,0.4);
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  margin-bottom:0.2rem;
+}
+
+.bishop-img-label span{
+  font-family:var(--ff-display);
+  font-size:0.9rem;
+  color:var(--gold-light);
+  font-style:italic;
+}
+
+.bishop-content blockquote{
+  font-family:var(--ff-display);
+  font-size:clamp(1.3rem, 2.5vw, 1.95rem);
+  font-style:italic;
+  font-weight:300;
+  color:var(--burgundy);
+  line-height:1.55;
+  border-left:2.5px solid var(--gold);
+  padding-left:1.75rem;
+  margin:1.75rem 0 2.25rem;
+  position:relative;
+}
+
+.bishop-content blockquote::before{
+  content:'"';
+  position:absolute;
+  left:0.5rem;
+  top:-0.5rem;
+  font-size:3rem;
+  color:var(--gold);
+  opacity:0.2;
+  line-height:1;
+}
+
+.bishop-name{
+  font-family:var(--ff-display);
+  font-size:1.35rem;
+  font-weight:600;
+  color:var(--burgundy);
+}
+
+.bishop-title{
+  font-family:var(--ff-ui);
+  font-size:0.65rem;
+  font-weight:600;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--gold-dark);
+  margin-top:0.35rem;
+}
+
+.bishop-message{
+  font-size:1.02rem;
+  color:var(--warm-grey);
+  line-height:2;
+  margin:1.4rem 0;
+}
+
+/* Scripture Section */
+.scripture-section{
+  background:linear-gradient(160deg, var(--burgundy-2) 0%, var(--burgundy) 50%, var(--burgundy-3) 100%);
+  padding:5rem 0;
+  position:relative;
+  overflow:hidden;
+}
+
+.scripture-section::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(-10deg, transparent 0%, transparent 6%, rgba(196,154,60,0.012) 6%, rgba(196,154,60,0.012) 7%);
+}
+
+.scripture-section .cross-icon{
+  margin:0 auto 2rem;
+  opacity:0.7;
+}
+
+.scripture-section blockquote{
+  font-family:var(--ff-display);
+  font-size:clamp(1.5rem, 3.2vw, 2.6rem);
+  font-style:italic;
+  font-weight:300;
+  color:rgba(255,255,255,0.92);
+  line-height:1.5;
+  max-width:760px;
+  margin:0 auto 1.75rem;
+  text-align:center;
+  position:relative;
+}
+
+.scripture-section blockquote::before,
+.scripture-section blockquote::after{
+  font-size:4rem;
+  position:absolute;
+  color:var(--gold);
+  opacity:0.15;
+  line-height:1;
+}
+
+.scripture-section blockquote::before{
+  content:'"';
+  top:-1.5rem;
+  left:-1rem;
+}
+
+.scripture-section blockquote::after{
+  content:'"';
+  bottom:-2.5rem;
+  right:-1rem;
+}
+
+.scripture-ref{
+  font-family:var(--ff-ui);
+  font-size:0.7rem;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--gold-light);
+  text-align:center;
+  display:block;
+}
+
+/* ================================================================
+   CONTACT
+================================================================ */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(3rem, 6vw, 5rem);
+  margin-top:3.5rem;
+}
+
+.info-block{
+  margin-bottom:2rem;
+  padding-left:1rem;
+  border-left:2px solid var(--parchment-3);
+  transition:border-color 0.3s var(--ease);
+}
+
+.info-block:hover{
+  border-left-color:var(--gold);
+}
+
+.info-block strong{
+  display:block;
+  font-family:var(--ff-ui);
+  font-size:0.6rem;
+  font-weight:600;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--gold-dark);
+  margin-bottom:0.5rem;
+}
+
+.info-block p,
+.info-block a{
+  font-size:1rem;
+  color:var(--warm-grey);
+  line-height:1.85;
+}
+
+.info-block a{
+  transition:color 0.25s;
+  position:relative;
+}
+
+.info-block a:hover{
+  color:var(--gold-dark);
+}
+
+.info-block a::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  width:0;
+  height:1px;
+  background:var(--gold);
+  transition:width 0.3s var(--ease);
+}
+
+.info-block a:hover::after{
+  width:100%;
+}
+
+.social-row{
+  display:flex;
+  gap:0.65rem;
+  margin-top:2rem;
+}
+
+.soc-btn{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:var(--warm-white);
+  border:1.5px solid var(--parchment-3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0.82rem;
+  color:var(--burgundy);
+  transition:all 0.35s var(--ease);
+  cursor:pointer;
+}
+
+.soc-btn:hover{
+  background:linear-gradient(135deg, var(--burgundy-2), var(--burgundy));
+  color:var(--white);
+  border-color:var(--burgundy);
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(74,14,36,0.25);
+}
+
+.map-box{
+  width:100%;
+  height:200px;
+  background:linear-gradient(145deg, var(--burgundy-2), var(--burgundy));
+  border-radius:var(--r-lg);
+  margin-top:1.75rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border:1.5px solid rgba(196,154,60,0.12);
+  color:rgba(255,255,255,0.3);
+  font-family:var(--ff-ui);
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  gap:0.75rem;
+  transition:all 0.4s var(--ease);
+}
+
+.map-box:hover{
+  border-color:rgba(196,154,60,0.25);
+  box-shadow:0 8px 24px rgba(74,14,36,0.15);
+}
+
+/* Contact Form */
+.cform{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+
+.frow{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1rem;
+}
+
+.fgroup{
+  display:flex;
+  flex-direction:column;
+  gap:0.38rem;
+}
+
+.fgroup label{
+  font-family:var(--ff-ui);
+  font-size:0.6rem;
+  font-weight:600;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--burgundy);
+}
+
+.fgroup input,
+.fgroup textarea,
+.fgroup select{
+  padding:0.85rem 1.15rem;
+  border:1.5px solid var(--parchment-3);
+  border-radius:var(--r);
+  font-size:1rem;
+  color:var(--charcoal);
+  background:var(--warm-white);
+  outline:none;
+  transition:all 0.3s var(--ease);
+}
+
+.fgroup input:focus,
+.fgroup textarea:focus,
+.fgroup select:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 4px rgba(196,154,60,0.1), 0 4px 12px rgba(196,154,60,0.08);
+}
+
+.fgroup textarea{
+  resize:vertical;
+  min-height:130px;
+}
+
+.fgroup select{
+  cursor:pointer;
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B5B4E' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 1rem center;
+  padding-right:2.5rem;
+}
+
+.branches-banner{
+  background:linear-gradient(135deg, var(--burgundy-2), var(--burgundy));
+  border-radius:var(--r-lg);
+  padding:2.75rem 3.5rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:2rem;
+  flex-wrap:wrap;
+  margin-top:4rem;
+  border:1.5px solid rgba(196,154,60,0.12);
+  box-shadow:0 12px 40px rgba(74,14,36,0.12);
+  position:relative;
+  overflow:hidden;
+}
+
+.branches-banner::before{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  width:200px;
+  height:200px;
+  background:radial-gradient(circle at top right, rgba(196,154,60,0.06), transparent 70%);
+  pointer-events:none;
+}
+
+.branches-text h3{
+  font-family:var(--ff-display);
+  font-size:1.5rem;
+  font-weight:600;
+  color:var(--white);
+  margin-bottom:0.4rem;
+}
+
+.branches-text p{
+  font-size:1rem;
+  color:rgba(255,255,255,0.5);
+}
+
+/* ================================================================
+   FOOTER — Premium
+================================================================ */
+footer{
+  background:var(--burgundy-deep);
+  border-top:1px solid rgba(196,154,60,0.1);
+  padding:5rem 0 2.5rem;
+  position:relative;
+}
+
+footer::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:1px;
+  background:linear-gradient(90deg, transparent, rgba(196,154,60,0.2), transparent);
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:3rem;
+  margin-bottom:3.5rem;
+}
+
+.footer-brand .nav-logo-text{
+  font-size:1.35rem;
+  display:block;
+  margin-bottom:1.25rem;
+}
+
+.footer-brand p{
+  font-size:0.88rem;
+  color:rgba(255,255,255,0.35);
+  line-height:1.9;
+  max-width:300px;
+  font-family:var(--ff-ui);
+}
+
+.footer-col h5{
+  font-family:var(--ff-display);
+  font-size:1.05rem;
+  font-weight:600;
+  color:var(--white);
+  margin-bottom:1.4rem;
+  position:relative;
+  padding-bottom:0.6rem;
+}
+
+.footer-col h5::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:1.5rem;
+  height:1.5px;
+  background:var(--gold);
+  border-radius:1px;
+}
+
+.footer-col ul{
+  display:flex;
+  flex-direction:column;
+  gap:0.7rem;
+}
+
+.footer-col ul li a{
+  font-family:var(--ff-ui);
+  font-size:0.82rem;
+  color:rgba(255,255,255,0.38);
+  transition:all 0.3s var(--ease);
+  position:relative;
+  display:inline-block;
+}
+
+.footer-col ul li a:hover{
+  color:var(--gold-light);
+  transform:translateX(4px);
+}
+
+.footer-sep{
+  border:none;
+  border-top:1px solid rgba(255,255,255,0.06);
+  margin:0 0 2rem;
+}
+
+.footer-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:1rem;
+}
+
+.footer-bottom p{
+  font-family:var(--ff-ui);
+  font-size:0.75rem;
+  color:rgba(255,255,255,0.22);
+}
+
+.footer-verse{
+  font-family:var(--ff-display);
+  font-style:italic;
+  font-size:0.82rem;
+  color:rgba(196,154,60,0.4);
+}
+
+/* ================================================================
+   PAGE SECTIONS
+================================================================ */
+.page-section{
+  padding:var(--sp) 0;
+}
+
+.page-section + .page-section{
+  padding-top:0;
+}
+
+/* ================================================================
+   PREFERS REDUCED MOTION
+================================================================ */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.01ms !important;
+  }
+  .reveal, .reveal-scale, .reveal-left, .reveal-right{
+    opacity:1;
+    transform:none;
+  }
+  .page{
+    opacity:1;
+    transform:none;
+  }
+}
+
+/* ================================================================
+   RESPONSIVE
+================================================================ */
+@media(max-width:1024px){
+  .welcome-grid{grid-template-columns:1fr; gap:3rem}
+  .welcome-img{max-width:440px; margin:0 auto}
+  .bishop-section{grid-template-columns:280px 1fr; gap:3rem}
+  .footer-grid{grid-template-columns:1fr 1fr; gap:2.5rem}
+  .about-timeline::before{left:120px}
+  .timeline-item{grid-template-columns:120px 1fr; gap:1.75rem}
+  .tl-year{font-size:1.3rem; padding-right:1.75rem}
+  .min-section{grid-template-columns:1fr}
+  .min-section, .min-section.flip{direction:ltr; min-height:auto}
+  .min-media-panel{min-height:400px}
+  .photo-mosaic{position:relative; height:400px}
+  .youth-media-wrap .youth-photos{flex:0 0 180px}
+  .min-info-panel{padding:2.75rem 2.5rem}
+  .home-cards-grid{grid-template-columns:1fr 1fr}
+  .services-strip{grid-template-columns:1fr 1fr}
+  .events-grid{gap:2rem}
+  .contact-grid{gap:3rem}
+  .scripture-section blockquote::before,
+  .scripture-section blockquote::after{display:none}
+}
+
+@media(max-width:768px){
+  .nav-links, .nav-cta-desk{display:none}
+  .hamburger{display:flex}
+  .welcome-grid, .bishop-section, .events-grid, .contact-grid, .about-cards{grid-template-columns:1fr; gap:2.5rem}
+  .home-cards-grid{grid-template-columns:1fr}
+  .about-timeline::before{display:none}
+  .timeline-item{grid-template-columns:1fr; gap:0.5rem}
+  .tl-year{text-align:left; padding-right:0; font-size:1.15rem}
+  .timeline-item::before{display:none}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-bottom{flex-direction:column; text-align:center}
+  .hero-stats-inner{gap:0.75rem; padding:1.25rem 0}
+  .stat-divider{display:none}
+  .reels-grid.count-3{grid-template-columns:1fr 1fr}
+  .services-strip{grid-template-columns:1fr 1fr; gap:0.85rem}
+  .hero-title{font-size:clamp(2.4rem, 7vw, 4rem)}
+  .page-hero-base{min-height:45vh; padding-bottom:3rem}
+  .min-media-panel{min-height:320px}
+  .photo-mosaic{height:320px}
+  .branches-banner{padding:2.25rem 2rem}
+  .branches-banner::before{display:none}
+}
+
+@media(max-width:480px){
+  .events-grid, .about-cards{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+  .branches-banner{padding:2rem 1.5rem}
+  .countdown{gap:0.6rem}
+  .cd-unit{min-width:48px}
+  .reels-grid.count-2, .reels-grid.count-3, .reels-grid.count-many{grid-template-columns:1fr 1fr}
+  .hero-content{padding:8rem 1.25rem 6rem}
+  .min-info-panel{padding:2rem 1.5rem}
+  .event-poster{height:240px}
+  .hero-stats-inner{padding:1rem 0}
+  .stat-item{padding:0.35rem 0.75rem}
+  .services-strip{grid-template-columns:1fr}
+  .bishop-section{margin-top:2.5rem}
+}
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar" role="navigation" aria-label="Main">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="#" onclick="navigate('home')" aria-label="Halleluyah Church">
+      <div class="cross-icon sm" aria-hidden="true"></div>
+      <span class="nav-logo-text">Halleluyah <span>Church</span></span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#" onclick="navigate('home')" data-page="home">Home</a></li>
+      <li><a href="#" onclick="navigate('about')" data-page="about">About</a></li>
+      <li><a href="#" onclick="navigate('ministries')" data-page="ministries">Ministries</a></li>
+      <li><a href="#" onclick="navigate('events')" data-page="events">Events</a></li>
+      <li><a href="#" onclick="navigate('leadership')" data-page="leadership">Leadership</a></li>
+      <li><a href="#" onclick="navigate('contact')" data-page="contact">Contact</a></li>
+    </ul>
+    <a href="#" onclick="navigate('contact')" class="btn btn-gold nav-cta nav-cta-desk">Join Us Sunday</a>
+    <button class="hamburger" id="hbg" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="drawer" role="dialog" aria-modal="true">
+  <a href="#" onclick="navigate('home');closeDrawer()">Home</a>
+  <a href="#" onclick="navigate('about');closeDrawer()">About</a>
+  <a href="#" onclick="navigate('ministries');closeDrawer()">Ministries</a>
+  <a href="#" onclick="navigate('events');closeDrawer()">Events</a>
+  <a href="#" onclick="navigate('leadership');closeDrawer()">Leadership</a>
+  <a href="#" onclick="navigate('contact');closeDrawer()">Contact</a>
+  <a href="#" onclick="navigate('contact');closeDrawer()" class="btn btn-gold" style="margin-top:1rem">Join Us Sunday</a>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<button id="back-top" aria-label="Back to top">&uarr;</button>
+
+<!-- ================================================================
+     HOME PAGE
+================================================================ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="hero-orbit" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot" aria-hidden="true"></span>
+        Est. 1991 &middot; 33 Years of God's Faithfulness
+      </div>
+      <h1 class="hero-title">Welcome to<br><em>Halleluyah Church</em></h1>
+      <div class="hero-typewriter" aria-live="polite">
+        <span class="typewriter-text" id="hw-text"></span>
+        <span class="cursor" aria-hidden="true"></span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#" onclick="navigate('contact')" class="btn btn-gold">Join Us This Sunday</a>
+        <a href="#" class="btn btn-outline-white">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="opacity:0.9"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Watch Online
+        </a>
+      </div>
+    </div>
+    <div class="hero-stats" aria-label="Church statistics">
+      <div class="wrap hero-stats-inner">
+        <div class="stat-item"><span class="stat-num" data-target="33" data-suffix="+">0</span><span class="stat-label">Years of Ministry</span></div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item"><span class="stat-num" data-target="30" data-suffix="">0</span><span class="stat-label">Branch Churches</span></div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item"><span class="stat-num" data-target="3000" data-suffix="+">0</span><span class="stat-label">Members Worldwide</span></div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item"><span class="stat-num" data-target="1" data-suffix=" Nation">0</span><span class="stat-label">Expanding Vision</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELCOME -->
+  <section class="page-section" aria-labelledby="welcome-h">
+    <div class="wrap welcome-grid">
+      <div class="welcome-img reveal">
+        <div class="img-placeholder"><div class="ph-cross" aria-hidden="true"></div></div>
+        <div class="img-badge" aria-label="33 years of ministry"><span class="badge-n">33</span><span class="badge-l">Years of<br>Grace</span></div>
+      </div>
+      <div>
+        <span class="eyebrow reveal">Welcome Home</span>
+        <h2 class="h-display reveal d1" id="welcome-h">A Church Built on<br><em>Faith &amp; Faithfulness</em></h2>
+        <div class="divider reveal d2"></div>
+        <p class="body-copy reveal d2">For 33 years, Halleluyah Church has been a beacon of God's grace in our community and beyond. What began as a gathering of passionate believers has grown into a vibrant family of over 3,000 members across 30 branch churches &mdash; all united by one Name above every name.</p>
+        <p class="body-copy reveal d3" style="margin-top:1rem">We believe the local church is the hope of the world, and every Sunday is a fresh invitation to encounter the living God. Whether you are walking in faith for decades or taking your very first steps &mdash; you belong here.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.5rem" class="reveal d4">
+          <a href="#" onclick="navigate('about')" class="btn btn-burgundy">Our Story</a>
+          <a href="#" onclick="navigate('ministries')" class="btn btn-outline-gold">Explore Ministries</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE CARDS -->
+  <section class="page-section" style="padding-top:0" aria-labelledby="quick-h">
+    <div class="wrap">
+      <div class="text-center" style="margin-bottom:3.5rem">
+        <span class="eyebrow reveal">What We Offer</span>
+        <h2 class="h-display reveal d1" id="quick-h">A Place to <em>Belong</em></h2>
+        <div class="divider center reveal d2"></div>
+        <p class="body-copy reveal d2">Discover the different ways you can connect, grow, and make a difference at Halleluyah Church.</p>
+      </div>
+      <div class="home-cards-grid stagger-children">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <h3>Vibrant Worship</h3>
+          <p>Every service is an encounter &mdash; Spirit-led worship, expository teaching, and a warmth that feels like home.</p>
+          <a href="#" onclick="navigate('ministries')" class="btn btn-outline-gold btn-sm">Learn More</a>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Community Impact</h3>
+          <p>Through our Outreach Ministry and 30 branch churches, we are actively transforming communities with the love of Christ.</p>
+          <a href="#" onclick="navigate('events')" class="btn btn-outline-gold btn-sm">See Events</a>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Deep Discipleship</h3>
+          <p>From children's ministry to youth and small groups, we are committed to raising believers who live the Word every day.</p>
+          <a href="#" onclick="navigate('about')" class="btn btn-outline-gold btn-sm">About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE TIMES -->
+  <section style="background:linear-gradient(165deg, var(--burgundy-2) 0%, var(--burgundy) 50%, var(--burgundy-3) 100%);padding:var(--sp-lg) 0;position:relative;overflow:hidden;" aria-label="Service times">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(-10deg, transparent 0%, transparent 6%, rgba(196,154,60,0.01) 6%, rgba(196,154,60,0.01) 7%);pointer-events:none;" aria-hidden="true"></div>
+    <div class="wrap" style="position:relative;z-index:1;">
+      <div class="text-center" style="margin-bottom:2.75rem">
+        <span class="eyebrow reveal" style="color:var(--gold-light)">Plan Your Visit</span>
+        <h2 class="h-display reveal d1" style="color:var(--white)">When We <em style="color:var(--gold-light)">Gather</em></h2>
+      </div>
+      <div class="services-strip stagger-children">
+        <div class="service-item reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <span class="service-name">Sunday Worship</span>
+          <span class="service-time">7:00 AM &amp; 10:00 AM</span>
+        </div>
+        <div class="service-item reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <span class="service-name">Midweek Service</span>
+          <span class="service-time">Wednesdays &middot; 6:30 PM</span>
+        </div>
+        <div class="service-item reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <span class="service-name">Youth Night</span>
+          <span class="service-time">Fridays &middot; 5:00 PM</span>
+        </div>
+        <div class="service-item reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="service-name">Prayer Meeting</span>
+          <span class="service-time">Tues &amp; Thurs &middot; 6:00 AM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     ABOUT PAGE
+================================================================ -->
+<div id="page-about" class="page">
+  <div class="page-hero-base about-hero" aria-label="About page header">
+    <div class="wrap page-hero-content">
+      <span class="eyebrow" style="color:var(--gold-light)">Who We Are</span>
+      <h1 class="h-display" style="color:var(--white)">Our Story of <em style="color:var(--gold-light)">33 Years</em></h1>
+    </div>
+  </div>
+  <section class="page-section">
+    <div class="wrap">
+      <div class="about-cards stagger-children">
+        <div class="about-card reveal">
+          <div class="card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To love God passionately, serve people intentionally, and make disciples who transform communities with the power of the Gospel of Jesus Christ.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Our Vision</h3>
+          <p>To be a Spirit-filled church that equips every believer to live their God-given calling &mdash; building a legacy of faith that outlasts generations.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Our Values</h3>
+          <p>Scripture, prayer, authentic worship, radical generosity, compassion for the broken, and unwavering commitment to the Great Commission.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Our Reach</h3>
+          <p>With 30 branch churches and over 3,000 members, Halleluyah Church is a growing family committed to touching every corner of our nation with hope.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="page-section" style="padding-top:0;background:var(--parchment-2)">
+    <div class="wrap">
+      <span class="eyebrow reveal" style="padding-top:var(--sp);display:block">Our Journey</span>
+      <h2 class="h-display reveal d1">33 Years of <em>God's Faithfulness</em></h2>
+      <div class="divider reveal d2"></div>
+      <p class="body-copy reveal d2">From a small gathering to a movement &mdash; every chapter of our story is written in God's grace.</p>
+      <div class="about-timeline">
+        <div class="timeline-item reveal"><div class="tl-year">1991</div><div class="tl-body"><h3>The Beginning</h3><p>Halleluyah Church was founded with a small congregation of 40 committed believers, meeting in a rented hall. The vision was simple: a church that would be a genuine home for anyone seeking God.</p></div></div>
+        <div class="timeline-item reveal"><div class="tl-year">1998</div><div class="tl-body"><h3>First Branch Church</h3><p>Seven years in, the congregation had grown so dramatically that the first daughter church was planted &mdash; a milestone that marked the beginning of Halleluyah's multi-church vision.</p></div></div>
+        <div class="timeline-item reveal"><div class="tl-year">2005</div><div class="tl-body"><h3>Permanent Sanctuary</h3><p>The church acquired and built its permanent home &mdash; a sanctuary to seat over 2,000 worshippers. What had once seemed impossible now stood as a testimony to God's provision.</p></div></div>
+        <div class="timeline-item reveal"><div class="tl-year">2012</div><div class="tl-body"><h3>10 Branch Churches</h3><p>A decade of multiplication saw Halleluyah establish 10 branch churches, each serving their local community with the same spirit of faith and excellence as the mother church.</p></div></div>
+        <div class="timeline-item reveal"><div class="tl-year">2020</div><div class="tl-body"><h3>Resilience Through Trials</h3><p>Through global challenges, Halleluyah Church pivoted rapidly to digital ministry &mdash; reaching more people online than ever before, demonstrating that the church is a people, not just a building.</p></div></div>
+        <div class="timeline-item reveal"><div class="tl-year">2024</div><div class="tl-body"><h3>30 Branch Churches &amp; Growing</h3><p>Today, 33 years from that first gathering, Halleluyah Church stands as a family of 30 branch churches and over 3,000 members &mdash; and we believe the best chapters are still being written.</p></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     MINISTRIES PAGE
+================================================================ -->
+<div id="page-ministries" class="page">
+  <div class="page-hero-base ministry-hero" aria-label="Ministries page header">
+    <div class="wrap page-hero-content" style="position:relative;z-index:1">
+      <span class="eyebrow" style="color:var(--gold-light)">Get Involved</span>
+      <h1 class="h-display" style="color:var(--white)">Our <em style="color:var(--gold-light)">Ministries</em></h1>
+    </div>
+  </div>
+
+  <section class="page-section" aria-label="Ministry listings" style="padding-top:0">
+    <div class="wrap" style="padding-top:var(--sp)">
+      <div class="text-center" style="margin-bottom:3.5rem">
+        <span class="eyebrow reveal">Where You Belong</span>
+        <h2 class="h-display reveal d1">Find Your <em>Place of Purpose</em></h2>
+        <div class="divider center reveal d2"></div>
+        <p class="body-copy reveal d2">Every ministry at Halleluyah is where purpose meets passion. Your gifts matter here.</p>
+      </div>
+    </div>
+
+    <div class="ministry-cards" id="ministry-cards-container">
+      <!-- Built by JS -->
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     EVENTS PAGE
+================================================================ -->
+<div id="page-events" class="page">
+  <div class="page-hero-base events-hero" aria-label="Events page header">
+    <div class="wrap page-hero-content" style="position:relative;z-index:1">
+      <span class="eyebrow" style="color:var(--gold-light)">Mark Your Calendar</span>
+      <h1 class="h-display" style="color:var(--white)">Upcoming <em style="color:var(--gold-light)">Events</em></h1>
+    </div>
+  </div>
+  <section class="page-section" aria-label="Event listings">
+    <div class="wrap">
+      <div class="text-center" style="margin-bottom:3.5rem">
+        <span class="eyebrow reveal">2024 &amp; 2025</span>
+        <h2 class="h-display reveal d1">Gather. <em>Grow. Be Transformed.</em></h2>
+        <div class="divider center reveal d2"></div>
+        <p class="body-copy reveal d2">Two landmark annual events that draw believers from across all our 30 branch churches and beyond.</p>
+      </div>
+      <div class="events-grid">
+        <article class="event-card reveal">
+          <div class="event-poster ep-conf"><span class="event-month-badge">December</span><span class="event-poster-icon" aria-hidden="true">&#10013;</span></div>
+          <div class="event-body">
+            <p class="eyebrow">Annual Event</p>
+            <h2>Annual General Conference</h2>
+            <p>The highlight of our church calendar &mdash; a powerful multi-day gathering of all branch churches, anointed speakers, and thousands of worshippers united around the Word. Lives are permanently changed.</p>
+            <p style="font-size:0.9rem;color:var(--warm-grey);margin-bottom:0.85rem"><strong style="color:var(--burgundy)">When:</strong> Every December &nbsp;|&nbsp; <strong style="color:var(--burgundy)">Where:</strong> Main Sanctuary &amp; Overflow</p>
+            <p style="font-family:var(--ff-ui);font-size:0.72rem;color:var(--light-grey);margin-bottom:1.15rem">Countdown to December Conference 2025</p>
+            <div class="countdown" id="cd-conf" aria-label="Countdown to Annual Conference"></div>
+            <button class="btn btn-burgundy" style="width:100%;justify-content:center" onclick="showToast('Registration for the Annual General Conference opens September 2025!')">Register Interest &rarr;</button>
+          </div>
+        </article>
+        <article class="event-card reveal d2">
+          <div class="event-poster ep-women"><span class="event-month-badge">August</span><span class="event-poster-icon" aria-hidden="true">&#127800;</span></div>
+          <div class="event-body">
+            <p class="eyebrow">Annual Event</p>
+            <h2>Women's Annual Conference</h2>
+            <p>An extraordinary gathering of women from all branches of Halleluyah Church &mdash; a weekend of worship, powerful ministry, deep fellowship, and divine breakthrough. Destinies are unlocked here.</p>
+            <p style="font-size:0.9rem;color:var(--warm-grey);margin-bottom:0.85rem"><strong style="color:var(--burgundy)">When:</strong> Every August &nbsp;|&nbsp; <strong style="color:var(--burgundy)">Where:</strong> Conference Centre</p>
+            <p style="font-family:var(--ff-ui);font-size:0.72rem;color:var(--light-grey);margin-bottom:1.15rem">Countdown to Women's Conference 2025</p>
+            <div class="countdown" id="cd-women" aria-label="Countdown to Women's Conference"></div>
+            <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="showToast('Women\'s Conference 2025 registration opens June 2025!')">Register Now &rarr;</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     LEADERSHIP PAGE
+================================================================ -->
+<div id="page-leadership" class="page">
+  <div class="page-hero-base leadership-hero" aria-label="Leadership page header">
+    <div class="wrap page-hero-content" style="position:relative;z-index:2">
+      <span class="eyebrow" style="color:var(--gold-light)">A Word from Our Bishop</span>
+      <h1 class="h-display" style="color:var(--white)">Founding &amp; <em style="color:var(--gold-light)">Presiding Bishop</em></h1>
+    </div>
+  </div>
+  <section class="page-section" aria-labelledby="bishop-h">
+    <div class="wrap">
+      <div class="bishop-section">
+        <div class="bishop-photo reveal">
+          <div class="bishop-frame">
+            <span class="bishop-silhouette" aria-hidden="true">&#128591;</span>
+            <div class="bishop-img-label"><p>Photo &mdash; Source from Facebook</p><span>@HalleluyahChurchInternational</span></div>
+          </div>
+          <div class="bishop-frame-accent" aria-hidden="true"></div>
+        </div>
+        <div class="bishop-content">
+          <span class="eyebrow reveal" style="color:var(--gold-dark)">Founding &amp; Presiding Bishop</span>
+          <h2 class="h-display reveal d1" id="bishop-h">A Heart That <em>Welcomes You</em></h2>
+          <div class="divider reveal d2"></div>
+          <blockquote class="reveal d2">"You are not here by accident. Every soul that walks through our doors carries a story that God is not finished writing &mdash; and at Halleluyah, we have the privilege of watching those stories unfold."</blockquote>
+          <p class="bishop-message reveal d3">Thirty-three years ago, I stood before 40 faithful souls with nothing but a burning conviction: that God was calling us to build a church that would be a genuine home &mdash; a place where the broken find healing, the lost find direction, the weary find rest, and the hungry find the Bread of Life.</p>
+          <p class="bishop-message reveal d3">What began in faith has become a family. Thirty branch churches. Thousands of lives transformed. Marriages restored. Children raised in the fear of God. Communities impacted. And we are only just beginning. This is not my story &mdash; it is God's story, and you are invited into the next chapter.</p>
+          <p class="bishop-message reveal d4">Whether you are new to faith or have walked with God for decades, I want you to know &mdash; there is a seat at this table for you. Come as you are. You will not leave the same.</p>
+          <div class="reveal d5" style="margin-top:2rem">
+            <div class="bishop-name">Dr. Zablon Amuliodo Malema</div>
+            <div class="bishop-title">Founding &amp; Presiding Bishop &mdash; Halleluyah Church International</div>
+          </div>
+          <div style="margin-top:2.25rem;display:flex;gap:1rem;flex-wrap:wrap" class="reveal d5">
+            <a href="#" onclick="navigate('contact')" class="btn btn-burgundy">Get in Touch</a>
+            <a href="#" onclick="navigate('about')" class="btn btn-outline-gold">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="scripture-section" aria-label="Inspirational statement">
+    <div class="wrap text-center" style="position:relative;z-index:1">
+      <div class="cross-icon md" style="margin:0 auto 2rem" aria-hidden="true"></div>
+      <blockquote class="reveal">"For where two or three gather in my name, there am I with them."</blockquote>
+      <span class="scripture-ref reveal d1">Matthew 18:20 &nbsp;&middot;&nbsp; The Foundation of Halleluyah Church</span>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     CONTACT PAGE
+================================================================ -->
+<div id="page-contact" class="page">
+  <div class="page-hero-base contact-hero" aria-label="Contact page header">
+    <div class="wrap page-hero-content" style="position:relative;z-index:1">
+      <span class="eyebrow" style="color:var(--gold-light)">We're Here For You</span>
+      <h1 class="h-display" style="color:var(--white)">Get in <em style="color:var(--gold-light)">Touch</em></h1>
+    </div>
+  </div>
+  <section class="page-section" aria-label="Contact details and form">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <h3 style="font-family:var(--ff-display);font-size:1.8rem;font-weight:600;color:var(--burgundy);margin-bottom:2.25rem">Contact Information</h3>
+          <div class="info-block"><strong>Main Campus Address</strong><p>Halleluyah Church<br>Mwanzo , <br>Eldoret, Kenya</p></div>
+          <div class="info-block"><strong>Phone Numbers</strong><p><a href="tel:+254727250934">+254 727 250 934</a> (Main Office)<br><a href="tel:+254727250934">+254 727250934</a> (Pastoral Care)</p></div>
+          <div class="info-block"><strong>Email Address</strong><p><a href="mailto:@halleluyahchurch.co.ke">@halleluyahchurch.co.ke</a><br><a href="mailto:bishop@halleluyahchurch.co.ke">bishop@halleluyahchurch.co.ke</a></p></div>
+          <div class="info-block"><strong>Office Hours</strong><p>Monday &ndash; Friday: 9:00 AM &ndash; 5:00 PM<br>Saturday: 10:00 AM &ndash; 2:00 PM</p></div>
+          <div class="social-row" aria-label="Social media">
+            <a class="soc-btn" href="#" aria-label="Facebook"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a class="soc-btn" href="#" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a class="soc-btn" href="#" aria-label="YouTube"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.46z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg></a>
+            <a class="soc-btn" href="#" aria-label="Twitter" style="font-weight:600;font-size:0.75rem">X</a>
+            <a class="soc-btn" href="#" aria-label="WhatsApp"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a class="soc-btn" href="https://www.tiktok.com/@halleluyahchurchinternational" target="_blank" rel="noopener" aria-label="TikTok" title="Follow us on TikTok">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.75a4.85 4.85 0 01-1.02-.06z"/></svg>
+            </a>
+          </div>
+          <div class="map-box" role="img" aria-label="Church location on map">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.35"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Upper Hill, Nairobi &middot; Interactive Map
+          </div>
+        </div>
+        <div class="reveal d2">
+          <h3 style="font-family:var(--ff-display);font-size:1.8rem;font-weight:600;color:var(--burgundy);margin-bottom:2.25rem">Send Us a Message</h3>
+          <form class="cform" onsubmit="submitForm(event)" novalidate>
+            <div class="frow">
+              <div class="fgroup"><label for="cfname">First Name</label><input type="text" id="cfname" placeholder="Grace" required autocomplete="given-name"/></div>
+              <div class="fgroup"><label for="cflname">Last Name</label><input type="text" id="cflname" placeholder="Kamau" required autocomplete="family-name"/></div>
+            </div>
+            <div class="fgroup"><label for="cfemail">Email Address</label><input type="email" id="cfemail" placeholder="you@example.com" required autocomplete="email"/></div>
+            <div class="fgroup"><label for="cfphone">Phone Number</label><input type="tel" id="cfphone" placeholder="+254 7XX XXX XXX" autocomplete="tel"/></div>
+            <div class="fgroup">
+              <label for="cfsubject">Subject</label>
+              <select id="cfsubject">
+                <option value="">Choose a topic&hellip;</option>
+                <option>First time visit</option>
+                <option>Prayer request</option>
+                <option>Membership enquiry</option>
+                <option>Ministries / volunteering</option>
+                <option>Events &amp; registration</option>
+                <option>Branch church enquiry</option>
+                <option>General enquiry</option>
+              </select>
+            </div>
+            <div class="fgroup"><label for="cfmsg">Your Message</label><textarea id="cfmsg" placeholder="How can we help you?" required></textarea></div>
+            <button type="submit" class="btn btn-burgundy" id="cf-submit" style="align-self:flex-start">Send Message &rarr;</button>
+          </form>
+        </div>
+      </div>
+      <div class="branches-banner reveal">
+        <div class="branches-text"><h3>30 Branch Churches Across the Nation</h3><p>Halleluyah Church has a presence across the country &mdash; there is a branch near you, ready to welcome you home.</p></div>
+        <button class="btn btn-gold" onclick="showToast('Branch church directory coming soon! Contact us for the nearest branch.')">View Our Branches</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="nav-logo-text">Halleluyah <span>Church</span></span>
+        <p>A Spirit-filled, multigenerational family of faith rooted in the Word of God. 33 years of faithfulness, 30 branch churches, and over 3,000 reasons to give God glory.</p>
+        <div class="social-row" style="margin-top:1.5rem">
+          <a class="soc-btn" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.5)" href="#" aria-label="Facebook"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a class="soc-btn" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.5)" href="#" aria-label="Instagram"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a class="soc-btn" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.5)" href="#" aria-label="YouTube"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.46z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg></a>
+          <a class="soc-btn" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);font-weight:600;font-size:0.7rem" href="#" aria-label="Twitter">X</a>
+          <a class="soc-btn" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.5)" href="https://www.tiktok.com/@halleluyahchurchinternational" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.75a4.85 4.85 0 01-1.02-.06z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Navigate</h5><ul><li><a href="#" onclick="navigate('home')">Home</a></li><li><a href="#" onclick="navigate('about')">About Us</a></li><li><a href="#" onclick="navigate('ministries')">Ministries</a></li><li><a href="#" onclick="navigate('events')">Events</a></li><li><a href="#" onclick="navigate('leadership')">Leadership</a></li><li><a href="#" onclick="navigate('contact')">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Ministries</h5><ul><li><a href="#" onclick="navigate('ministries')">Outreach</a></li><li><a href="#" onclick="navigate('ministries')">Youth</a></li><li><a href="#" onclick="navigate('ministries')">Women</a></li><li><a href="#" onclick="navigate('ministries')">Worship</a></li><li><a href="#" onclick="navigate('ministries')">Children</a></li><li><a href="#" onclick="navigate('ministries')">Prayer</a></li></ul></div>
+      <div class="footer-col"><h5>Connect</h5><ul><li><a href="#" onclick="navigate('contact')">I'm New Here</a></li><li><a href="#" onclick="navigate('events')">Events</a></li><li><a href="#" onclick="navigate('contact')">Prayer Request</a></li><li><a href="#" onclick="navigate('contact')">Branch Churches</a></li><li><a href="#" onclick="showToast('Watch live on our YouTube channel every Sunday!')">Watch Online</a></li></ul></div>
+    </div>
+    <hr class="footer-sep"/>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Halleluyah Church International. All rights reserved. Est. 1991.</p>
+      <p class="footer-verse">"To him be glory in the church and in Christ Jesus throughout all generations." &mdash; Ephesians 3:21</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ================================================================
+   ██████████████████████████████████████████████████████████
+   ███                                                    ███
+   ███       MINISTRY MEDIA CONFIG — EDIT THIS SECTION    ███
+   ███                                                    ███
+   ██████████████████████████████████████████████████████████
+
+   IMAGES (all ministries):
+   ─────────────────────────
+   Add as MANY images as you like in the images[] array.
+   The layout auto-adjusts:
+     • 1 image  → full panel
+     • 2 images → side by side
+     • 3 images → 1 large on top, 2 small on bottom
+     • 4 images → 2×2 grid
+     • 5+ images → 2-column masonry grid
+   Leave an image slot as '' to use the fallback colour block.
+   Example:
+     images: [
+       'photo1.jpg',
+       'photo2.jpg',
+       'photo3.jpg',
+       'photo4.jpg',   ← just keep adding lines
+     ],
+
+   YOUTH REELS (Youth Ministry only):
+   ────────────────────────────────────
+   Add reel / video links to the reels[] array.
+   Each reel shows as a clickable thumbnail in a grid.
+   Provide an optional { url, label, thumb } object,
+   or just a plain URL string for a simple entry.
+   Example:
+     reels: [
+       { url: 'https://vm.tiktok.com/ZMxxxxxx/', label: 'Youth Night Highlights' },
+       { url: 'myvideo.mp4',                     label: 'Friday Praise' },
+       // add more reels here — { url: '...', label: '...' }
+       // or just a plain URL string: 'https://vm.tiktok.com/ZMxxxxxx/'
+     ],
+
+   TIKTOK ACCOUNT (Youth Ministry):
+   ──────────────────────────────────
+   Set YOUTH_TIKTOK to your church TikTok URL.
+   It shows as a small "Follow on TikTok" button above the reels grid.
+   Set to '' to hide it.
+================================================================ */
+
+/* ── TikTok account URL ── */
+const YOUTH_TIKTOK = 'https://www.tiktok.com/@halleluyahchurchinternational';
+
+/* ================================================================
+   01 · OUTREACH MINISTRY
+================================================================ */
+const OUTREACH = {
+  images: [
+    'FB_IMG_1753608172129.jpg',
+    'FB_IMG_1753608125330.jpg',
+    'FB_IMG_1753608041417.jpg',
+    // add more images here — just paste the filename or URL
+  ],
+};
+
+/* ================================================================
+   02 · YOUTH MINISTRY
+   Add as many reels as you like in reels[]
+================================================================ */
+const YOUTH = {
+  images: [
+    'FB_IMG_1782340043197.jpg',
+    'FB_IMG_1782340050391.jpg',
+    'FB_IMG_1782340073733.jpg',
+    // add more images here
+  ],
+  reels: [
+    { url: 'f3f96f9f7ca3b3d74b5cfdf0b72bfc9b.mp4', label: 'Youth Highlights' },
+    { url: '1ff256ee49db271748b2ec1135ce79b9.mp4', label: 'Friday Night Live' },
+    // add more reels here — { url: '...', label: '...' }
+    // or just a plain URL string: 'https://vm.tiktok.com/ZMxxxxxx/'
+  ],
+};
+
+/* ================================================================
+   03 · WOMEN MINISTRY
+================================================================ */
+const WOMEN = {
+  images: [
+    'IMG-20250819-WA0015.jpg',
+    'IMG-20250816-WA0002.jpg',
+    // add more images here
+  ],
+};
+
+/* ================================================================
+   04 · WORSHIP MINISTRY
+================================================================ */
+const WORSHIP = {
+  images: [
+    'IMG-20250826-WA0000.jpg',
+    // add more images here
+  ],
+};
+
+/* ================================================================
+   05 · CHILDREN MINISTRY
+================================================================ */
+const CHILDREN = {
+  images: [
+    'IMG-20251026-WA0007.jpg',
+    'IMG-20251026-WA0014.jpg',
+    // add more images here
+  ],
+};
+
+/* ================================================================
+   06 · PRAYER MINISTRY
+================================================================ */
+const PRAYER = {
+  images: [
+    // add images here
+  ],
+};
+
+/* ── Internal config assembly ── */
+const MINISTRY_CONFIG = [
+  { id:'outreach', num:'01', flip:false, icon:'&#127758;', label:'Ministry 01', title:'Outreach Ministry',
+    desc:'We believe the church exists not just for its members but for the world it serves. Our Outreach Ministry takes the love of Christ beyond our walls — into prisons, hospitals, schools, and underserved communities.',
+    pills:['Community Service','Evangelism','Prison Ministry','Food Programs'],
+    btnLabel:'Get Involved', btnPage:'contact', fallback:'ph-bg-outreach', ...OUTREACH },
+  { id:'youth', num:'02', flip:true, icon:'&#9889;', label:'Ministry 02', title:'Youth Ministry', isYouth:true,
+    desc:'The next generation is not the church of tomorrow — they are the church of today. Our Youth Ministry empowers young people aged 13–35 to live boldly for Christ through dynamic Friday gatherings, leadership training, and discipleship camps.',
+    pills:['Ages 13–35','Friday Nights','Leadership','Discipleship'],
+    btnLabel:'Join the Movement', btnPage:'contact', fallback:'ph-bg-youth', ...YOUTH },
+  { id:'women', num:'03', flip:false, icon:'&#127800;', label:'Ministry 03', title:'Women Ministry',
+    desc:"Women of Halleluyah are a force of grace, strength, and purpose. Our Women's Ministry creates spaces where women discover their identity in Christ and step into the fullness of their calling — including our flagship Annual Women's Conference every August.",
+    pills:['Fellowship','Annual Conference','Mentorship','Identity in Christ'],
+    btnLabel:"Women's Conference", btnPage:'events', fallback:'ph-bg-women', ...WOMEN },
+  { id:'worship', num:'04', flip:true, icon:'&#127925;', label:'Ministry 04', title:'Worship Ministry',
+    desc:'At Halleluyah, worship is not a programme — it is a lifestyle. Our Worship Team is a gifted family of musicians, vocalists, and creatives trained not just in musical skill but in spiritual depth, leading our congregation into the very presence of God.',
+    pills:['Music','Vocals','Creative Arts','Sunday Service'],
+    btnLabel:'Join the Team', btnPage:'contact', fallback:'ph-bg-worship', ...WORSHIP },
+  { id:'children', num:'05', flip:false, icon:'&#127793;', label:'Ministry 05', title:'Children Ministry',
+    desc:'Every child is a world-changer in the making, and at Halleluyah we take that seriously. Kingdom Kids provides a safe, joyful, Spirit-filled environment for children from birth through age 12, laying foundations of faith that last a lifetime.',
+    pills:['Birth – Age 12','Kingdom Kids','Bible Teaching','Creative Worship'],
+    btnLabel:'Learn More', btnPage:'contact', fallback:'ph-bg-children', ...CHILDREN },
+  { id:'prayer', num:'06', flip:true, icon:'&#128591;', label:'Ministry 06', title:'Prayer Ministry',
+    desc:'Prayer is not the preparation for the work — it is the work. Our Prayer Ministry is the engine room of Halleluyah Church, interceding daily for our congregation, nation, and world through early morning prayer, all-night vigils, and the 24/7 Prayer Wall.',
+    pills:['6 AM Prayer','Night Vigils','24/7 Prayer Wall','Intercession'],
+    btnLabel:'Join in Prayer', btnPage:'contact', fallback:'ph-bg-prayer', ...PRAYER },
+];
+
+/* ================================================================
+   BUILD PHOTO MOSAIC
+   Accepts any number of image URLs, renders adaptive grid layout
+================================================================ */
+function buildMosaic(images, fallback, altPrefix) {
+  const imgs = (images || []).filter(s => s && s.trim());
+
+  function cell(url, cls) {
+    const fb = `onerror="this.closest('.mosaic-cell').classList.add('${fallback}');this.remove()"`;
+    return `<div class="mosaic-cell${cls ? ' '+cls : ''}">
+      <img src="${url}" alt="${altPrefix} photo" loading="lazy" ${fb}/>
+    </div>`;
+  }
+  function phCell(cls) {
+    return `<div class="mosaic-cell ${fallback}${cls ? ' '+cls : ''}"></div>`;
+  }
+  function slot(idx, cls) {
+    return imgs[idx] ? cell(imgs[idx], cls) : phCell(cls);
+  }
+
+  if (imgs.length === 0) {
+    return `<div class="photo-mosaic"><div class="mosaic-row">${phCell('main-cell')}</div></div>`;
+  }
+  if (imgs.length === 1) {
+    return `<div class="photo-mosaic"><div class="mosaic-row">${slot(0,'main-cell')}</div></div>`;
+  }
+  if (imgs.length === 2) {
+    return `<div class="photo-mosaic"><div class="mosaic-row" style="flex:0 0 60%">${slot(0,'main-cell')}</div><div class="mosaic-row">${slot(1)}</div></div>`;
+  }
+  if (imgs.length === 3) {
+    return `<div class="photo-mosaic">
+      <div class="mosaic-row" style="flex:0 0 60%">${slot(0,'main-cell')}</div>
+      <div class="mosaic-row">${slot(1)}${slot(2)}</div>
+    </div>`;
+  }
+  if (imgs.length === 4) {
+    return `<div class="photo-mosaic">
+      <div class="mosaic-row">${slot(0,'main-cell')}${slot(1)}</div>
+      <div class="mosaic-row">${slot(2)}${slot(3)}</div>
+    </div>`;
+  }
+  // 5+ images: first image large top-left, rest fill right column and bottom row
+  const rows = [imgs.slice(1,3), imgs.slice(3)];
+  const rightCol = rows[0].map((u,i) => cell(u)).join('') || '';
+  const bottomRow = rows[1].map((u,i) => cell(u)).join('') || '';
+  return `<div class="photo-mosaic">
+    <div class="mosaic-row" style="flex:0 0 60%">
+      ${slot(0,'main-cell')}
+      <div style="display:flex;flex-direction:column;gap:3px;flex:1">${rightCol}</div>
+    </div>
+    ${bottomRow ? `<div class="mosaic-row">${bottomRow}</div>` : ''}
+  </div>`;
+}
+
+/* ================================================================
+   BUILD YOUTH REELS GRID
+================================================================ */
+function buildReelsGrid(reels, tiktokUrl) {
+  const list = (reels || []).filter(r => r);
+  const normalised = list.map(r => typeof r === 'string' ? { url: r, label: '' } : r);
+
+  const countClass = normalised.length === 1 ? 'count-1'
+                   : normalised.length === 2 ? 'count-2'
+                   : normalised.length === 3 ? 'count-3'
+                   : 'count-many';
+
+  const tiktokBtn = tiktokUrl
+    ? `<a class="reels-tiktok" href="${tiktokUrl}" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.75a4.85 4.85 0 01-1.02-.06z"/></svg>
+        Follow on TikTok
+      </a>`
+    : '';
+
+  const thumbs = normalised.map(r =>
+    `<a class="reel-thumb" href="${r.url}" target="_blank" rel="noopener" aria-label="${r.label || 'Watch reel'}">
+      <div class="reel-thumb-inner">
+        <span class="reel-play" aria-hidden="true">&#9654;</span>
+      </div>
+      ${r.label ? `<div class="reel-label">${r.label}</div>` : ''}
+    </a>`
+  ).join('');
+
+  return `<div class="youth-reels">
+    <div class="reels-header">
+      <div class="reels-header-left">
+        <span class="reels-title">Reels &amp; Videos</span>
+      </div>
+      ${tiktokBtn}
+    </div>
+    <div class="reels-grid ${countClass}">${thumbs || '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:rgba(255,255,255,.2);font-family:var(--ff-ui);font-size:.7rem;letter-spacing:.1em">Add reels in the config above</div>'}</div>
+  </div>`;
+}
+
+/* ================================================================
+   BUILD MINISTRY HTML
+================================================================ */
+function buildMinistries() {
+  const container = document.getElementById('ministry-cards-container');
+  if (!container) return;
+
+  container.innerHTML = MINISTRY_CONFIG.map(m => {
+    let mediaPanelInner = '';
+
+    if (m.isYouth) {
+      const imgs = (m.images || []).filter(s => s && s.trim());
+      function ySlot(url) {
+        if (!url) return `<div class="mosaic-cell ${m.fallback}"></div>`;
+        return `<div class="mosaic-cell">
+          <img src="${url}" alt="${m.title} photo" loading="lazy"
+               onerror="this.closest('.mosaic-cell').classList.add('${m.fallback}');this.remove()"/>
+        </div>`;
+      }
+      const photoCells = imgs.length === 0
+        ? `<div class="mosaic-cell ${m.fallback}"></div>`
+        : imgs.slice(0,3).map(u => ySlot(u)).join('');
+
+      mediaPanelInner = `<div class="youth-media-wrap">
+        <div class="youth-photos">${photoCells}</div>
+        ${buildReelsGrid(m.reels, YOUTH_TIKTOK)}
+      </div>`;
+    } else {
+      mediaPanelInner = buildMosaic(m.images, m.fallback, m.title);
+    }
+
+    const pills = m.pills.map(p => `<span class="min-tag-pill">${p}</span>`).join('');
+
+    return `
+    <div class="min-section${m.flip ? ' flip' : ''} reveal" id="min-${m.id}">
+      <div class="min-media-panel">
+        ${mediaPanelInner}
+        <div class="min-count-badge" aria-hidden="true">${m.num}</div>
+      </div>
+      <div class="min-info-panel">
+        <div class="min-tag">${m.label}</div>
+        <h2>${m.title}</h2>
+        <p>${m.desc}</p>
+        <div class="min-tags-strip">${pills}</div>
+        <button class="btn btn-burgundy" onclick="navigate('${m.btnPage}')">${m.btnLabel}</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+/* ================================================================
+   PAGE ROUTER — with smooth transitions
+================================================================ */
+const pages = ['home','about','ministries','events','leadership','contact'];
+let ministriesBuilt = false;
+
+function navigate(page) {
+  if (!pages.includes(page)) return;
+
+  const current = document.querySelector('.page.active');
+
+  // Fade out current
+  if (current) {
+    current.classList.remove('fade-in');
+    setTimeout(() => {
+      current.classList.remove('active');
+      // Show new page
+      const target = document.getElementById('page-' + page);
+      if (target) {
+        target.classList.add('active');
+        // Trigger reflow for animation
+        void target.offsetWidth;
+        target.classList.add('fade-in');
+      }
+    }, 200);
+  } else {
+    pages.forEach(p => {
+      const el = document.getElementById('page-' + p);
+      if (el) el.classList.remove('active');
+    });
+    const target = document.getElementById('page-' + page);
+    if (target) {
+      target.classList.add('active');
+      void target.offsetWidth;
+      target.classList.add('fade-in');
+    }
+  }
+
+  document.querySelectorAll('[data-page]').forEach(a =>
+    a.classList.toggle('active', a.dataset.page === page));
+  window.scrollTo({top: 0, behavior: 'smooth'});
+
+  if (page === 'ministries' && !ministriesBuilt) {
+    buildMinistries();
+    ministriesBuilt = true;
+  }
+
+  setTimeout(() => runReveal(), 120);
+  if (page === 'home') initCounters();
+  if (page === 'events') buildCountdowns();
+  return false;
+}
+
+/* ================================================================
+   NAVBAR
+================================================================ */
+const nav   = document.getElementById('navbar');
+const bTop  = document.getElementById('back-top');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  nav.classList.toggle('scrolled', y > 40);
+  bTop.classList.toggle('show', y > 600);
+}, {passive: true});
+bTop.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+
+/* ================================================================
+   HAMBURGER
+================================================================ */
+const hbg    = document.getElementById('hbg');
+const drawer = document.getElementById('drawer');
+hbg.onclick  = () => {
+  hbg.classList.toggle('open');
+  drawer.classList.toggle('open');
+  hbg.setAttribute('aria-expanded', drawer.classList.contains('open'));
+};
+function closeDrawer() {
+  hbg.classList.remove('open');
+  drawer.classList.remove('open');
+  hbg.setAttribute('aria-expanded', 'false');
+}
+
+/* ================================================================
+   PARTICLES — Enhanced
+================================================================ */
+(function(){
+  const c   = document.getElementById('particles');
+  const ctx = c.getContext('2d');
+  let W, H, pts = [];
+  function resize() { W = c.width = window.innerWidth; H = c.height = window.innerHeight; }
+  window.addEventListener('resize', resize, {passive: true}); resize();
+  const G = 'rgba(196,154,60,', B = 'rgba(139,26,56,';
+  function rnd(a, b) { return a + Math.random() * (b - a); }
+  function mk() {
+    return {x: rnd(0,W), y: rnd(H, H*1.6), r: rnd(.5,2.2), vx: rnd(-.08,.08),
+            vy: rnd(-.15,.45), a: rnd(.12,.5), c: Math.random()>.75 ? B : G,
+            life: 1, dec: rnd(.0015,.005)};
+  }
+  for (let i = 0; i < 55; i++) { const p = mk(); p.y = rnd(0,H); pts.push(p); }
+  function frame() {
+    ctx.clearRect(0,0,W,H);
+    if (Math.random() < .25 && pts.length < 85) pts.push(mk());
+    pts = pts.filter(p => p.life > 0);
+    pts.forEach(p => {
+      p.x += p.vx; p.y += p.vy; p.life -= p.dec;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = p.c + (p.a * p.life) + ')'; ctx.fill();
+    });
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
+
+/* ================================================================
+   TYPEWRITER
+================================================================ */
+(function(){
+  const el = document.getElementById('hw-text');
+  if (!el) return;
+  const phrases = ["A Place of Faith","A Community of Hope","Growing Together in Christ","33 Years of God's Faithfulness"];
+  let pi = 0, ci = 0, del = false, pause = 0;
+  const TS = 55, TD = 28, PE = 1900, PS = 400;
+  function tick() {
+    const ph = phrases[pi];
+    if (!del) { el.textContent = ph.slice(0, ++ci); if (ci === ph.length) { del = true; pause = PE; } }
+    else       { el.textContent = ph.slice(0, --ci); if (ci === 0) { del = false; pi = (pi+1)%phrases.length; pause = PS; } }
+    const sp = pause > 0 ? pause : (del ? TD : TS);
+    if (pause > 0) pause = 0;
+    setTimeout(tick, sp);
+  }
+  setTimeout(tick, 1200);
+})();
+
+/* ================================================================
+   COUNTERS — Animate on scroll
+================================================================ */
+let countersRan = false;
+function initCounters() {
+  if (countersRan) return;
+  const els = document.querySelectorAll('.stat-num[data-target]');
+  if (!els.length) return;
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, target = +el.dataset.target, suffix = el.dataset.suffix || '', dur = 1800, step = 16;
+      const inc = target / (dur / step); let cur = 0;
+      const t = setInterval(() => {
+        cur = Math.min(cur + inc, target);
+        el.textContent = (target >= 1000 ? Math.round(cur).toLocaleString() : Math.round(cur)) + suffix;
+        if (cur >= target) clearInterval(t);
+      }, step);
+      obs.unobserve(el);
+    });
+    countersRan = true;
+  }, {threshold: .4});
+  els.forEach(el => obs.observe(el));
+}
+
+/* ================================================================
+   SCROLL REVEAL — Enhanced
+================================================================ */
+function runReveal() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, {threshold: .06, rootMargin: '0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal:not(.in), .reveal-scale:not(.in), .reveal-left:not(.in), .reveal-right:not(.in)').forEach(el => obs.observe(el));
+}
+runReveal();
+
+/* ================================================================
+   RESPONSIVE GRIDS
+================================================================ */
+function responsiveGrid() {
+  const g = document.querySelector('.home-cards-grid');
+  const s = document.querySelector('.services-strip');
+  if (g) g.style.gridTemplateColumns = window.innerWidth < 640 ? '1fr' : (window.innerWidth < 900 ? '1fr 1fr' : 'repeat(3,1fr)');
+  if (s) s.style.gridTemplateColumns = window.innerWidth < 540 ? '1fr 1fr' : (window.innerWidth < 768 ? '1fr 1fr' : 'repeat(4,1fr)');
+}
+window.addEventListener('resize', responsiveGrid, {passive: true}); responsiveGrid();
+
+/* ================================================================
+   COUNTDOWNS
+================================================================ */
+function buildCountdowns() {
+  const now  = new Date();
+  const conf = new Date(now.getFullYear() + (now.getMonth() >= 11 ? 1 : 0), 11, 1);
+  const wom  = new Date(now.getFullYear() + (now.getMonth() >= 7  ? 1 : 0), 7, 1);
+  function render(id, target) {
+    const el = document.getElementById(id); if (!el) return;
+    function update() {
+      const diff = target - new Date();
+      if (diff <= 0) { el.innerHTML = '<div style="color:var(--gold);font-family:var(--ff-display);font-weight:600">Event is Live!</div>'; return; }
+      const d = Math.floor(diff/864e5), h = Math.floor((diff%864e5)/36e5),
+            m = Math.floor((diff%36e5)/6e4), s = Math.floor((diff%6e4)/1e3);
+      el.innerHTML = `<div class="cd-unit"><span class="cd-num">${String(d).padStart(2,'0')}</span><span class="cd-label">Days</span></div><div class="cd-sep">:</div><div class="cd-unit"><span class="cd-num">${String(h).padStart(2,'0')}</span><span class="cd-label">Hours</span></div><div class="cd-sep">:</div><div class="cd-unit"><span class="cd-num">${String(m).padStart(2,'0')}</span><span class="cd-label">Mins</span></div><div class="cd-sep">:</div><div class="cd-unit"><span class="cd-num">${String(s).padStart(2,'0')}</span><span class="cd-label">Secs</span></div>`;
+    }
+    update(); setInterval(update, 1000);
+  }
+  render('cd-conf', conf); render('cd-women', wom);
+}
+
+/* ================================================================
+   CONTACT FORM
+================================================================ */
+function submitForm(e) {
+  e.preventDefault();
+  const btn = document.getElementById('cf-submit');
+  btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-right:0.5rem"><polyline points="20 6 9 17 4 12"/></svg> Message Sent!';
+  btn.style.background = 'linear-gradient(135deg,#2a4a30,#3a6a40)';
+  btn.disabled = true;
+  showToast('Thank you! We will be in touch shortly.');
+  setTimeout(() => { btn.innerHTML = 'Send Message &rarr;'; btn.style.background = ''; btn.disabled = false; e.target.reset(); }, 4000);
+}
+
+/* ================================================================
+   TOAST
+================================================================ */
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 3500);
+}
+
+/* ================================================================
+   INIT
+================================================================ */
+navigate('home');
+document.querySelectorAll('a[onclick]').forEach(a => {
+  a.addEventListener('click', e => { if (a.getAttribute('href') === '#') e.preventDefault(); });
+});
+</script>
+</body>
+</html>
